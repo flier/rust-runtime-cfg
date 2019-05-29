@@ -1,0 +1,36 @@
+[package]
+name = "runtime_cfg"
+version = "0.1.0"
+authors = ["Flier Lu <flier.lu@gmail.com>"]
+description = "Evaluation of configuration flags, at runtime-time."
+license = "MIT | Apache-2.0"
+documentation = "https://docs.rs/runtime_cfg"
+homepage = "https://github.com/flier/rust-runtime-cfg"
+readme = "README.md"
+keywords = ["runtime", "cfg", "syn"]
+categories = ["development-tools"]
+edition = "2018"
+
+[badges]
+travis-ci = { repository = "flier/rust-runtime-cfg", branch = "master" }
+
+[features]
+default = ["all"]
+all = ["std", "parsing", "printing"]
+std = []
+parsing = ["std", "syn", "proc-macro2"]
+printing = []
+
+[dependencies]
+cfg-if = "0.1"
+syn = { version = "0.15", features = ["parsing"], optional = true }
+proc-macro2 = { version = "0.4", optional = true }
+
+[dev-dependencies]
+quote = "0.6"
+
+[package.metadata.docs.rs]
+all-features = true
+
+[package.metadata.playground]
+all-features = true
