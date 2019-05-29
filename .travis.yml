@@ -11,6 +11,11 @@ matrix:
   allow_failures:
     - rust: nightly
   fast_finish: true
+  exclude:
+    - rust: stable
+      env: BUILD_FLAGS=--no-default-features
+    - rust: stable
+      env: BUILD_FLAGS=--no-default-features --features parsing
 env:
   matrix:
     - BUILD_FLAGS=
