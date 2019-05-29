@@ -1,6 +1,6 @@
-Evaluation of configuration flags, at runtime-time.  [![travis](https://api.travis-ci.org/flier/rust-runtime-cfg.svg)](https://travis-ci.org/flier/rust-runtime-cfg) [![crate](https://img.shields.io/crates/v/runtime_cfg.svg)](https://crates.io/crates/runtime_cfg) [![docs](https://docs.rs/runtime_cfg/badge.svg)](https://docs.rs/crate/runtime_cfg/)
+# `runtime_cfg` [![travis](https://api.travis-ci.org/flier/rust-runtime-cfg.svg)](https://travis-ci.org/flier/rust-runtime-cfg) [![crate](https://img.shields.io/crates/v/runtime_cfg.svg)](https://crates.io/crates/runtime_cfg) [![docs](https://docs.rs/runtime_cfg/badge.svg)](https://docs.rs/crate/runtime_cfg/)
 
-===========================
+Evaluation of configuration flags, at runtime-time.
 
 ## Usage
 
