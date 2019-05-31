@@ -25,7 +25,9 @@
 #[macro_use]
 extern crate cfg_if;
 
-pub mod matches;
+mod matches;
+
+pub use matches::{Matcher, Pattern};
 
 cfg_if! {
     if #[cfg(feature = "parsing")] {
